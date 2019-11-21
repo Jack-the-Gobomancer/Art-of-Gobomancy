@@ -1,0 +1,143 @@
+{
+    "name": "Goblin Stormcaller",
+    "size": "L",
+    "type": {
+        "type": "humanoid",
+        "swarmSize": "S"
+    },
+    "source": "GobomancersTreasury",
+    "alignment": null,
+    "ac": [{
+            "ac": 15,
+            "from": [
+                "{@item studded leather armor|phb}"
+            ]
+        }
+    ],
+    "hp": {
+        "formula": "5d6 + 5",
+        "average": 22
+    },
+    "speed": {
+        "walk": 30,
+        "burrow": 40
+    },
+    "str": 8,
+    "dex": 17,
+    "con": 13,
+    "int": 12,
+    "wis": 17,
+    "cha": 11,
+    "passive": 16,
+    "cr": "5",
+    "level": 0,
+    "senses": [
+        "Darkvision 180ft"
+    ],
+    "senseTags": [
+        "D"
+    ],
+    "languages": [
+        "Common",
+        "Goblin",
+        "Terran"
+    ],
+    "languageTags": [
+        "C",
+        "GO",
+        "T"
+    ],
+    "skill": {
+        "stealth": "+9",
+        "acrobatics": "+9",
+        "survival": "+6",
+        "perception": "+6"
+    },
+    "resist": [
+        "lightning",
+        "thunder"
+    ],
+    "conditionImmune": [],
+    "trait": [{
+            "name": "Living Pit Trap",
+            "entries": [
+                "They cover their backs in soil, net them selves over a pit dug on the road, and bare teeth like stone. When stood upon by several creatures of small size or larger, they drag those creatures down the chasms they cover. Those creature need to make a Dexterity Saving Throw {@dc 12}(+1 per Goblin Fissure adjacent to this one), or be pulled in. The Goblin Fissure spans 15 ft. diameter and is considered difficult terrain."
+            ]
+        }, {
+            "name": "Mass Spellcaster",
+            "entries": [
+                "A Goblin Fissure can cast a spell based upon the size of the fissure. For each Goblin Fissure in the encounter it can cast 1 of that number in spell levels. (1 fissure = 1st level : 9 fissures = 9th level) When a Fissure cast a spell, the rest of them cannot do so for an entire round. Counter spell will always need a check to counter a spell cast by this creature, no matter the level of the spell."
+            ]
+        }
+    ],
+    "damageTags": [
+        "P",
+        "B"
+    ],
+    "environment": [
+        "desert",
+        "forest",
+        "grassland",
+        "hill",
+        "mountain",
+        "underdark",
+        "urban"
+    ],
+    "immune": [],
+    "action": [{
+            "name": "Multi-attack",
+            "entries": [
+                "May make two bite attacks and one stone attack."
+            ]
+        }, {
+            "name": "Bite",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) piercing damage."
+            ]
+        }, {
+            "name": "Stone",
+            "entries": [
+                "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+            ]
+        }
+    ],
+    "miscTags": [
+        "MW"
+    ],
+    "save": {
+        "dex": "+6",
+        "wis": "+6"
+    },
+    "spellcasting": [{
+            "name": "Spellcasting",
+            "constant": [
+                "{@spell fog cloud|PHB}",
+                "{@spell water walk|PHB} (On water only)"
+            ],
+            "spells": {
+                "1": {
+                    "spells": [
+                        "{@spell grease|PHB}",
+                        "{@spell snare|XGE}",
+                        "{@spell thunderwave|PHB}"
+                    ],
+                    "slots": 3
+                },
+                "2": {
+                    "spells": [
+                        "{@spell misty step|PHB}",
+                        "{@spell skywrite|XGE}"
+                    ],
+                    "slots": 2
+                },
+                "3": {
+                    "spells": [
+                        "{@spell call lightning|PHB}"
+                    ],
+                    "slots": 1
+                }
+            },
+            "type": "spellcasting"
+        }
+    ]
+}
